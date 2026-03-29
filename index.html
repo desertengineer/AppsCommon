@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Poppins', sans-serif; background:#f5f7fa; color:#333;}
+    header {background:#0a2540; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;}
+    header h1 {font-size:22px;}
+    nav a {color:#fff; margin-left:20px; text-decoration:none;}
+
+    .hero {
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h2 {font-size:42px; animation:fadeIn 2s ease;}
+
+    section {padding:60px 40px;}
+
+    .about, .services, .projects, .contact {
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title {font-size:28px; margin-bottom:20px;}
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card {
+      background:white;
+      border-radius:10px;
+      padding:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:transform 0.3s;
+    }
+
+    .card:hover {transform:translateY(-5px);}
+
+    .project img {width:100%; border-radius:10px;}
+
+    footer {
+      background:#0a2540;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);} 
+      to {opacity:1; transform:translateY(0);} 
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Eng. Ahmed Al-Mansouri</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>25+ Years in Construction & Infrastructure</h2>
+    <p>Delivering large-scale civil engineering projects with precision and excellence</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    Senior Civil Engineer with over 25 years of experience in construction, infrastructure development, and project management. Specialized in highways, bridges, and urban development projects across multiple countries.
+  </p>
+</section>
+
+<section id="services" class="services">
+  <h2 class="section-title">Services</h2>
+  <div class="grid">
+    <div class="card">Project Management</div>
+    <div class="card">Structural Design</div>
+    <div class="card">Site Supervision</div>
+    <div class="card">Infrastructure Planning</div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid">
+    <div class="card project">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+      <h3>Highway Development</h3>
+      <p>Construction of 120km highway connecting major cities.</p>
+    </div>
+    <div class="card project">
+      <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8">
+      <h3>Bridge Construction</h3>
+      <p>Design and execution of modern suspension bridge.</p>
+    </div>
+    <div class="card project">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+      <h3>Urban Infrastructure</h3>
+      <p>Comprehensive urban redevelopment project.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: engineer@email.com</p>
+  <p>Phone: +218 91 0000000</p>
+</section>
+
+<footer>
+  <p>© 2026 Civil Engineer Portfolio</p>
+</footer>
+
+</body>
+</html>
